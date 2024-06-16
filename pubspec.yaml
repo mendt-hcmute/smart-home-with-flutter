@@ -1,0 +1,32 @@
+name: smarthome_4
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mongo_dart: ^0.10.1
+  syncfusion_flutter_charts: ^25.1.40
+  speech_to_text: ^6.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+  - lib/assets/
+  plugin:
+    platforms:
+      android:
+        package: com.example.speech_to_text
+        pluginClass: SpeechToTextPlugin
+      ios:
+        pluginClass: SpeechToTextPlugin
+
